@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tracing a clipped repost back to its original upload</title>
+<meta name="description" content="A repost arrives as a fifteen-second clip with the watermark cropped out, and the question is where it came from. Reverse search answers it, but only if the query is prepared correctly.">
+<link rel="canonical" href="https://youram470-art.github.io/notes/reversevideosearch-org.html">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 3rem auto; padding: 0 1.2rem;
+         font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  h1 { font-size: 1.6rem; line-height: 1.28; margin-bottom: .3rem; }
+  .meta { font-size: .85rem; opacity: .6; margin-bottom: 1.6rem; }
+  a { color: inherit; }
+  footer { margin-top: 2.8rem; font-size: .9rem; opacity: .65; }
+</style>
+</head>
+<body>
+<nav><a href="../">← AI video tools</a></nav>
+<h1>Tracing a clipped repost back to its original upload</h1>
+<div class="meta">2026-11-25 · field notes</div>
+<p>The mistake is uploading the whole clip. Platforms index keyframes, and a clip that has been re-encoded, cropped and captioned matches poorly at the frame level. Take three frames from moments where the image is least obstructed.</p>
+<p>Crop out overlays before searching. Captions, progress bars and account watermarks are the strongest visual signal in the frame, and they pull the search toward other reposts of the same edited version rather than the original. For a closer look at Reverse video search, the <a href="https://reversevideosearch.org">tool page is here</a>.</p>
+<p>If the first pass returns only mirrors, flip the frame horizontally and search again. Many reposts are mirrored to dodge detection, and the flipped frame frequently matches the source directly.</p>
+<p>Record the earliest upload date you can verify, along with the account. That date is what settles attribution disputes, and screenshots of search results are not a substitute for it.</p>
+<footer>Notes on AI video production. Written and maintained by the site author; no sponsored placement.</footer>
+</body>
+</html>

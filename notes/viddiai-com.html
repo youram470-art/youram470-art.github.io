@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Batch re-renders: the two settings worth changing first</title>
+<meta name="description" content="When a batch of clips comes back with the same flaw, the instinct is to rework the prompts. Usually the flaw lives in two settings that apply to the whole batch.">
+<link rel="canonical" href="https://youram470-art.github.io/notes/viddiai-com.html">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 3rem auto; padding: 0 1.2rem;
+         font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  h1 { font-size: 1.6rem; line-height: 1.28; margin-bottom: .3rem; }
+  .meta { font-size: .85rem; opacity: .6; margin-bottom: 1.6rem; }
+  a { color: inherit; }
+  footer { margin-top: 2.8rem; font-size: .9rem; opacity: .65; }
+</style>
+</head>
+<body>
+<nav><a href="../">← AI video tools</a></nav>
+<h1>Batch re-renders: the two settings worth changing first</h1>
+<div class="meta">2026-11-25 · field notes</div>
+<p>The first is duration. A model asked for eight seconds when it was trained mostly on four tends to repeat a gesture or stall in the last third. Cutting the requested length and extending in the edit often fixes the batch without touching a single prompt.</p>
+<p>The second is motion strength. Too low and the subject drifts; too high and geometry collapses mid-shot. Moving it in small steps across a three-clip test tells you where the batch sits far faster than a full re-render. For a closer look at Viddi AI, the <a href="https://viddiai.com">tool page is here</a>.</p>
+<p>Change one setting at a time and keep the prompts fixed, otherwise the result tells you nothing about which change did the work. This sounds obvious and is skipped constantly under deadline pressure.</p>
+<p>Keep the failed batch. It is the cheapest control group you will ever have, and comparing it against the fix is how you learn where a given model&#x27;s limits actually sit.</p>
+<footer>Notes on AI video production. Written and maintained by the site author; no sponsored placement.</footer>
+</body>
+</html>

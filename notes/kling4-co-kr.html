@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Multi-shot consistency without a reference image</title>
+<meta name="description" content="Reference images solve consistency, but they are not always available. When a character has to appear in four shots and there is no still to anchor them, description has to do the work.">
+<link rel="canonical" href="https://youram470-art.github.io/notes/kling4-co-kr.html">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 3rem auto; padding: 0 1.2rem;
+         font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  h1 { font-size: 1.6rem; line-height: 1.28; margin-bottom: .3rem; }
+  .meta { font-size: .85rem; opacity: .6; margin-bottom: 1.6rem; }
+  a { color: inherit; }
+  footer { margin-top: 2.8rem; font-size: .9rem; opacity: .65; }
+</style>
+</head>
+<body>
+<nav><a href="../">← AI video tools</a></nav>
+<h1>Multi-shot consistency without a reference image</h1>
+<div class="meta">2026-11-25 · field notes</div>
+<p>Write the character once, in a fixed order: age range, build, hair, one garment with a colour, one accessory. The order matters because it keeps the phrasing identical across prompts, and identical phrasing is what keeps the model&#x27;s interpretation stable.</p>
+<p>Repeat that paragraph verbatim in every shot prompt. Paraphrasing between shots is the main cause of a character who looks related but not the same, and the drift is much easier to prevent than to fix. For a closer look at Kling 4, the <a href="https://kling4.co.kr">tool page is here</a>.</p>
+<p>Keep the lighting direction consistent too. A character described identically but lit from opposite sides will read as a different person, especially in close-ups where the shadow shape carries most of the recognition.</p>
+<p>Accept that the fourth shot will need the most attempts. Consistency degrades with each generation, so schedule the shots that share a character early in the session while your patience and the model&#x27;s agreement are both intact.</p>
+<footer>Notes on AI video production. Written and maintained by the site author; no sponsored placement.</footer>
+</body>
+</html>

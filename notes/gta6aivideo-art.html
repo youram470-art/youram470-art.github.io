@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fan trailers: matching the grain of the source footage</title>
+<meta name="description" content="A fan trailer lives or dies on whether the generated shots look like they came from the same camera as the original material. Grain and contrast do more of that work than content.">
+<link rel="canonical" href="https://youram470-art.github.io/notes/gta6aivideo-art.html">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 3rem auto; padding: 0 1.2rem;
+         font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  h1 { font-size: 1.6rem; line-height: 1.28; margin-bottom: .3rem; }
+  .meta { font-size: .85rem; opacity: .6; margin-bottom: 1.6rem; }
+  a { color: inherit; }
+  footer { margin-top: 2.8rem; font-size: .9rem; opacity: .65; }
+</style>
+</head>
+<body>
+<nav><a href="../">← AI video tools</a></nav>
+<h1>Fan trailers: matching the grain of the source footage</h1>
+<div class="meta">2026-11-25 · field notes</div>
+<p>Sample two frames from the source at full resolution and look at the noise pattern rather than the colour. Game capture usually carries fine, even noise; film emulation carries coarser, uneven grain that clumps in shadows.</p>
+<p>Apply matching grain to the whole timeline at the end, not per clip. Per-clip grain creates visible seams at every cut, which reads as amateur even when each shot is convincing on its own. For a closer look at GTA 6 AI video, the <a href="https://gta6aivideo.art">tool page is here</a>.</p>
+<p>Contrast matters as much as grain. Generated footage tends to arrive with clean blacks, and source footage rarely has them, so lifting the shadow floor slightly before the grain pass does more for plausibility than any colour grade.</p>
+<p>Finally, cut on motion. Generated shots often start and end on a held frame, and hiding those holds behind a cut on movement is the cheapest way to make a trailer feel edited rather than assembled.</p>
+<footer>Notes on AI video production. Written and maintained by the site author; no sponsored placement.</footer>
+</body>
+</html>
