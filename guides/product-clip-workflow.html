@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cutting a 30-second product clip from generated shots</title>
+<meta name="description" content="A working method for turning AI-generated shots into a 30-second product clip: the shot count, the order of work, sound, and the review pass that catches the failures.">
+<style>
+  body { max-width: 44rem; margin: 3rem auto; padding: 0 1.2rem; font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #1c2430; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  li { margin: .4rem 0; }
+  .meta { opacity: .7; font-size: .9rem; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .7; }
+</style>
+</head>
+<body>
+<h1>Cutting a 30-second product clip from generated shots</h1>
+<p class="meta">26 November 2026 · production notes</p>
+
+<p>Thirty seconds sounds short until the shots arrive. Ten generated clips at four seconds each is forty seconds of material, and the edit has to remove a quarter of it while still telling the story in the right order. The method below is what keeps that from turning into an afternoon of shuffling clips.</p>
+
+<h2>Decide the shot count from the script, not the footage</h2>
+
+<p>Write the voiceover or the on-screen copy first, then count the sentences that need a picture. A 30-second clip usually lands at six to eight shots: an opening that establishes the object, two or three that show it working, one that shows the result, and a closing frame with the name and the price or the call to action.</p>
+
+<p>That count is a budget. If a shot cannot be justified by a sentence, it is a shot that will be cut later, and generating it was the expensive part. Six planned shots produce fewer rejects than twelve improvised ones.</p>
+
+<h2>Generate the ending first</h2>
+
+<p>The closing frame is the hardest to get right, because it has to hold still, carry the product cleanly, and leave room for type. Generating it first means the rest of the edit is built towards a frame that already exists, and the style of that frame sets the lighting and the lens for everything else.</p>
+
+<p>If the ending fails after several attempts, the whole concept needs adjusting, and it is better to learn that before generating seven other shots in a style that cannot be resolved. Camera movement is worth deciding at this stage too: a short, deliberate move is easier to match across shots than a long travelling one, and the reasons are covered in these <a href="https://wan-3.io/">notes on camera moves in generated video</a>.</p>
+
+<h2>Cut with sound before colour</h2>
+
+<p>Assemble the shots against the music or the voiceover, not against silence. Sound gives the edit its rhythm, and a cut that feels arbitrary in silence usually lands on a beat. Colour, grain, and the final grade come after the timing is locked, because regrading a re-cut sequence is wasted work.</p>
+
+<p>Two rules make the assembly faster. First, cut on motion: a hand entering, a lid closing, a light changing. Cuts on motion hide the discontinuity between separately generated clips. Second, keep every shot at least half a second longer than it needs to be until the timing is locked, then trim. Trimming is easy; regenerating a shot that was cut too tight is not.</p>
+
+<h2>Treat transitions as shots, not effects</h2>
+
+<p>A wipe or a zoom transition is a decision about space: it tells the viewer that two shots are in the same room, or that time has passed. Generated footage often contains small inconsistencies between shots — a label that shifts, a shadow that changes direction — and a transition can either hide them or draw attention to them.</p>
+
+<p>The reliable option is a cut on a matching action, with the mismatch placed where the eye is not looking. The unreliable option is a flashy transition over a mismatch, which reads as a cover-up because it is one. If two shots cannot be reconciled, cut to a third shot rather than dissolving between them.</p>
+
+<h2>Fix the first second last</h2>
+
+<p>The opening frame is the one that gets reworked most, because it carries the most weight. Leave it until the rest of the clip is locked, then choose the frame that makes the following shot inevitable. A useful test is to watch only the first second with the sound off: if it does not raise a question that the next shot answers, it is not the opening yet.</p>
+
+<p>Text legibility belongs in the same pass. Check the opening title and the closing card at phone size, with the video muted, in one hand. Type that reads at desktop size often disappears at phone size, particularly over a moving background, and the fix is usually a darker plate behind the type rather than a bigger font.</p>
+
+<h2>Review the export, not the timeline</h2>
+
+<p>Export at the delivery settings and watch the file, not the project. Compression changes how grain and gradients read, and a grade that looks clean in the timeline can band in the export. Watch it twice: once for structure, once for detail. The structural pass catches the shot that is in the wrong place; the detail pass catches the frame where the product label is soft.</p>
+
+<p>Then keep the shot list and the prompts with the export. A 30-second clip becomes a series, and the second one is much faster when the first one's decisions are written down rather than remembered. The same applies to the edit itself: the sequence of six shots, the music cue, and the two trims that made it work are the reusable part, and they are worth one paragraph in the project notes.</p>
+
+<p>More production notes are collected in the <a href="/ten-free-ai-video-tools/">free AI video tools</a> write-up and in the <a href="/guides/vertical-video-checklist.html">vertical video checklist</a>.</p>
+
+<footer>Maintained by <a href="https://github.com/youram470-art">youram470-art</a>. No affiliate links.</footer>
+</body>
+</html>
