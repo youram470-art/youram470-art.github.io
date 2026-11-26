@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 3rem auto; padding: 0 1.2rem;
+         font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  h1 { font-size: 1.6rem; line-height: 1.28; margin-bottom: .3rem; }
+  .meta { font-size: .85rem; opacity: .6; margin-bottom: 1.6rem; }
+  a { color: inherit; }
+  footer { margin-top: 2.8rem; font-size: .9rem; opacity: .65; }
+</style>
+<title>Lighting notes compared: three setups, three results</title>
+<meta name="description" content="A side-by-side of the three lighting descriptions that transfer most reliably between subjects.">
+<link rel="canonical" href="https://youram470-art.github.io/notes/lighting-notes-compared.html">
+</head>
+<body>
+<nav><a href="../">← AI video tools</a></nav>
+<h1>Lighting notes compared: three setups, three results</h1>
+<div class="meta">2026-11-26 · working notes</div>
+<p>Lighting descriptions fail in a specific way: they name a mood, the model returns even fill, and the frame goes flat. The three notes below are written as instructions instead, and each one has a predictable effect on shadow shape.</p>
+<table><thead><tr><th>Setup</th><th>What it does</th><th>Where it works</th></tr></thead><tbody><tr><td>Window light, left, hard edge</td><td>One source, short distance, visible shadow</td><td>Portrait and product, reads as daylight interior</td></tr><tr><td>Overcast, overhead, soft edge</td><td>No visible source, shadows wrap under the subject</td><td>Documents the subject, low drama, good for texture</td></tr><tr><td>Single warm source, low right, cool bounce left</td><td>Two temperatures, shadow side stays readable</td><td>Interiors at night, faces keep their shape</td></tr></tbody></table>
+<p>Both of the last two recipes are worth trying in <a href="https://grokaiimagegenerator.net">Grok's image generator</a> on the same subject, because the difference between them is the difference between a room and a filter. The test is to run the same three notes on one subject and compare the shadow edges rather than the colours, because colour is what the eye notices and shadow shape is what the frame is actually built from.</p>
+<p>The middle row is the safe one and the last is the interesting one. Overcast light is hard to get wrong because there is no direction to contradict; a warm source with a cool bounce is easy to get wrong because the balance has to be deliberate, which is why it teaches more per attempt.</p>
+<p>Write the note before the subject. A lighting description that survives a change of subject is worth keeping, and the three above are the ones that kept working across portraits, rooms and objects.</p>
+<footer>Notes on AI video production. Written and maintained by the site author; no sponsored placement.</footer>
+</body>
+</html>

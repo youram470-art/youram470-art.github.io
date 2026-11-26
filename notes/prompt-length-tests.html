@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 3rem auto; padding: 0 1.2rem;
+         font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  h1 { font-size: 1.6rem; line-height: 1.28; margin-bottom: .3rem; }
+  .meta { font-size: .85rem; opacity: .6; margin-bottom: 1.6rem; }
+  a { color: inherit; }
+  footer { margin-top: 2.8rem; font-size: .9rem; opacity: .65; }
+</style>
+<title>Five questions about prompt length, answered with tests</title>
+<meta name="description" content="Short answers to the questions that come up when prompts stop working, each with a test you can run in ten minutes.">
+<link rel="canonical" href="https://youram470-art.github.io/notes/prompt-length-tests.html">
+</head>
+<body>
+<nav><a href="../">← AI video tools</a></nav>
+<h1>Five questions about prompt length, answered with tests</h1>
+<div class="meta">2026-11-26 · working notes</div>
+<p>Prompt advice is easy to find and hard to check. These five answers are the ones that survived being tested rather than repeated, and each comes with the comparison that settled it.</p>
+<h2>Does a longer prompt produce a more detailed image?</h2><p>Usually it produces a more average one. Detail comes from naming things, not from adding clauses, and every clause competes for the same attention. Cut the prompt in half and count how many described objects survive.</p>
+<h2>Should I describe the camera?</h2><p>Only if the camera moves. A sentence about a static camera is a sentence the model spends on nothing, and it often produces a slow drift that looks like a mistake.</p>
+<h2>Why does the same prompt give different results?</h2><p>Because sampling is stochastic. The useful response is to fix the seed where the tool allows it, and where it does not, to treat the first three outputs as a sample rather than an answer.</p>When the seed cannot be fixed, as is the case in <a href="https://seedance25.kr">Seedance 2.5</a> unless you set one explicitly, three outputs are a sample and not an answer.
+<h2>Is a negative prompt worth it?</h2><p>For artefacts, yes; for ideas, no. Text, watermarks and extra fingers are habits worth forbidding. A crowd is an idea, and forbidding it leaves a hole where a description should be.</p>
+<h2>How do I know a prompt is finished?</h2><p>When you can say what will move and what will stay still. If both answers are vague, the prompt is a wish, and wishes render as averages.</p>
+<p>The pattern across all five is the same: fewer claims, each one checkable. Seedance 2.5 is forgiving enough that a vague prompt still produces something watchable, which is exactly why the discipline has to come from the person writing it.</p>
+<footer>Notes on AI video production. Written and maintained by the site author; no sponsored placement.</footer>
+</body>
+</html>

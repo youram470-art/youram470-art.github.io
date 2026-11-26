@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 3rem auto; padding: 0 1.2rem;
+         font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  h1 { font-size: 1.6rem; line-height: 1.28; margin-bottom: .3rem; }
+  .meta { font-size: .85rem; opacity: .6; margin-bottom: 1.6rem; }
+  a { color: inherit; }
+  footer { margin-top: 2.8rem; font-size: .9rem; opacity: .65; }
+</style>
+<title>A short glossary for browser video work</title>
+<meta name="description" content="Six terms that come up whenever a video model runs in a browser tab, defined in plain language.">
+<link rel="canonical" href="https://youram470-art.github.io/notes/browser-video-glossary.html">
+</head>
+<body>
+<nav><a href="../">← AI video tools</a></nav>
+<h1>A short glossary for browser video work</h1>
+<div class="meta">2026-11-26 · working notes</div>
+<p>Browser video tools borrow their vocabulary from film and their constraints from web browsers, which is why the same word often means two things in one conversation. These six definitions are the ones that cause the most confusion.</p>
+<dt>Prompt adherence</dt><dd>How much of the written description survives into the frame. High adherence with a long prompt usually means a busy, literal image; low adherence with a short prompt is often just a different picture than the one you asked for.</dd>
+<dt>Frame budget</dt><dd>The number of frames a model can keep consistent before detail starts to drift. It is a property of the model and the length of the shot, not of your prompt.</dd>
+<dt>Drift</dt><dd>The slow accumulation of small errors across a shot: background detail softening, fabric changing colour, a face losing its shape. Drift is why the last second of a long shot rarely matches the first.</dd>Drift is the reason a frame budget is worth measuring in the first place: a shot that looks stable in <a href="https://h3video.org">the H3 Video player</a> at second two can be visibly soft by second six.
+<dt>Temporal coherence</dt><dd>Whether consecutive frames describe the same world. A shot can be coherent for two seconds and incoherent for six, and the number is worth knowing before you plan a cut.</dd>
+<dt>Still-first workflow</dt><dd>Generating the composition as an image, then animating it. Cheaper to iterate and easier to review, because a still is a document other people can point at.</dd>
+<dt>Attempt limit</dt><dd>A number chosen in advance for how many generations a shot gets. The limit is what turns a hobby into a process, and four is a reasonable default.</dd>
+<p>The terms matter less than the habit of using them consistently. A team that agrees on what drift means will argue about the right thing, which is usually whether the shot is worth another attempt.</p>
+<footer>Notes on AI video production. Written and maintained by the site author; no sponsored placement.</footer>
+</body>
+</html>
